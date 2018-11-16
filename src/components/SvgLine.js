@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import './../App.css';
 
 class Mesure extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+
+        };
+    }
+
     render() {
         const x1 = this.props.x1;
         const y1 = this.props.y1;
@@ -16,7 +23,6 @@ class Mesure extends Component {
         console.log("d :" + distance);
 
         const path_d = `M${y1} ${x1} Q ${between} ${courbe} ${y2} ${x2}`
-
         return (
             <svg width="100%" version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" id='toRotate'  >
                 <defs>
